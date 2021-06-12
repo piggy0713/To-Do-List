@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background: rgb(10, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(10, 0, 36, 1) 0%,
+    rgba(9, 63, 121, 1) 0%,
+    rgba(0, 248, 255, 1) 90%
+  );
+  min-height: 100vh;
+  width: 100%;
+  padding: 10px;
+}
+
+.container {
+  background: #fff;
+  max-width: 600px;
+  width: 100%
+  margin: 120px auto;
+
+  padding: 25px;
+}
+
+.container header {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.container .inputContainer {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  height: 45px;
+}
+
+.inputContainer input {
+  width: 90%;
+  height: 100%;
+  outline: none;
+  border: 1px solid #bbb;
+  font-size: 1.2rem;
+  padding-left: 10px;
+}
+
+.inputContainer input:focus {
+  border-color: #085f91;
+}
+
+.inputContainer button{
+  width: 45px;
+  height: 100%;
+  border: none;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #085f91;
+  margin: 3px;
+  
+}
+
+.inputContainer button:hover {
+  background: #00f8ff;
+}
+
+taskContainer {
+  display: flex;
+}
+
+
+.taskList {
+  padding-inline-start: 0;
+  list-style: none;
+  background: #989895;
+}
+
+
+.tasks{
+  margin: 0 auto;
+  padding: 0.3rem;
+  display: flex;
+  color: #000;
+  border: 1px solid #bbb;
+  background: #F2F2F2;
+  align-items: center;
+}
+
+.taskList li {
+  font-size: 1.2rem;
+  flex: 1;
+  padding: 0 15px;
+  height: 100%;
+  line-height: 45px;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+.completeBtn, .deleteBtn{
+
+  border-radius: 5px;
+  height: 30px;
+  padding: 0.5rem;
+  margin-left: 0.2rem;
+  cursor: pointer;
+  border: none;
+}
+
+.completeBtn {
+  background: #41B441;
+}
+
+.deleteBtn {
+  background: #FC3308;
+  margin-right: 10px;
+}
+
+.fa-trash,
+.fa-check{
+    pointer-events: none;
+}
+
+/* style completed task */
+.completeTask {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
